@@ -1,4 +1,5 @@
-package com.entity;
+package com.cydeo.entity;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
+
 
 @Getter
 @Setter
