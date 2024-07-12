@@ -11,7 +11,7 @@ import java.util.List;
 
 public class UserPrincipal implements UserDetails {
 
-    // i need to bring my entitiy User
+    // i need to bring my entity User
 
     private final User user;
 
