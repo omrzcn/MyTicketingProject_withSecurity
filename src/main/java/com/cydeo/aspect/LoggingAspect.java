@@ -31,10 +31,14 @@ public class LoggingAspect {
     public void anyProjectAndTaskControllerPC(){}
 
 
+
+
     @Before("anyProjectAndTaskControllerPC()")
     public void anyProjectAndTaskControllerAdvice(JoinPoint joinPoint){
         log.info("Before--> Method : {} , User: {} ",joinPoint.getSignature().toShortString(), getUsername()); // getUsername methodu olusturacagiz, kimin girdigini gormek icin
     }
+
+
 
 
     @AfterReturning(pointcut ="anyProjectAndTaskControllerPC()",returning = "results")
@@ -42,6 +46,7 @@ public class LoggingAspect {
         log.info("After Returning ---> Method : {}, User : {}",joinPoint.getSignature().toShortString(),results.toString());
 
     }
+
 
 
 
